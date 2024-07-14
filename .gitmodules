@@ -4,3 +4,9 @@
 [submodule "build-server"]
 	path = build-server
 	url = https://github.com/hugovdev/thankmas-build-server.git
+[submodule "common"]
+	path = common
+	url = https://github.com/hugovdev/thankmas-common.git
+[submodule "common-paper"]
+	path = common-paper
+	url = https://github.com/hugovdev/thankmas-paper.git
