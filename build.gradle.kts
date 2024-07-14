@@ -22,6 +22,7 @@ allprojects {
 
     plugins.withId("org.jetbrains.kotlin.jvm") {
         kotlin {
+            jvmToolchain(17)
             explicitApi()
         }
 
@@ -30,11 +31,6 @@ allprojects {
                 javaParameters = true
                 freeCompilerArgs.add("-Xcontext-receivers")
             }
-        }
-
-        kotlin {
-            jvmToolchain(17)
-            explicitApi()
         }
     }
 }
