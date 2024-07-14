@@ -1,0 +1,6 @@
+[submodule "thankmas-lobby"]
+	path = lobby
+	url = https://github.com/hugovdev/thankmas-lobby.git
+[submodule "build-server"]
+	path = build-server
+	url = https://github.com/hugovdev/thankmas-build-server.git
