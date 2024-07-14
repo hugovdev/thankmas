@@ -1,0 +1,32 @@
+[versions]
+paper = "1.20.4-R0.1-SNAPSHOT"
+luckPerms = "5.4"
+fastBoard = "2.1.3"
+lamp = "3.2.1"
+
+[libraries]
+
+# Dependency injection!
+koin-core = { module = "io.insert-koin:koin-core", version = "3.5.6" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version = "1.3.1" }
+koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "1.3.1" }
+
+# Miscellaneous utils and libraries!
+luck-perms = { module = "net.luckperms:api", version.ref = "luckPerms" }
+fastboard = { module = "fr.mrmicky:fastboard", version.ref = "fastBoard" }
+interfaces = { module = "com.noxcrew.interfaces:interfaces", version = "1.1.10" }
+
+citizens = { module = "net.citizensnpcs:citizens-main", version = "2.0.33-SNAPSHOT" }
+hephaistos = { module = "io.github.jglrxavpok.hephaistos:common", version = "2.6.1" }
+aswm = { module = "com.infernalsuite.aswm:api", version.ref = "paper" }
+
+hikariCP = { module = "com.zaxxer:HikariCP", version = "5.1.0" }
+
+# Lamp command framework
+lamp-common = { module = "com.github.Revxrsal.Lamp:common", version.ref = "lamp" }
+lamp-bukkit = { module = "com.github.Revxrsal.Lamp:bukkit", version.ref = "lamp" }
+
+[bundles]
+koin = ["koin-core", "koin-annotations"]
+
+[plugins]
