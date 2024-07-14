@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+
 plugins {
     kotlin("jvm") version "2.0.0"
     id("io.papermc.paperweight.userdev") version "1.7.1" apply false
@@ -17,9 +19,22 @@ allprojects {
         maven(url = "https://maven.noxcrew.com/public/")
         maven(url = "https://maven.citizensnpcs.co/repo")
     }
-}
 
-kotlin {
-    jvmToolchain(17)
-    explicitApi()
+    plugins.withId("org.jetbrains.kotlin.jvm") {
+        kotlin {
+            explicitApi()
+        }
+
+        tasks.compileKotlin {
+            compilerOptions {
+                javaParameters = true
+                freeCompilerArgs.add("-Xcontext-receivers")
+            }
+        }
+
+        kotlin {
+            jvmToolchain(17)
+            explicitApi()
+        }
+    }
 }
