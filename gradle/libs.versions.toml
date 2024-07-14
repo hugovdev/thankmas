@@ -3,6 +3,7 @@ paper = "1.20.4-R0.1-SNAPSHOT"
 luckPerms = "5.4"
 fastBoard = "2.1.3"
 lamp = "3.2.1"
+exposed = "0.52.0"
 
 [libraries]
 
@@ -14,7 +15,7 @@ koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "1.
 # Miscellaneous utils and libraries!
 luck-perms = { module = "net.luckperms:api", version.ref = "luckPerms" }
 fastboard = { module = "fr.mrmicky:fastboard", version.ref = "fastBoard" }
-interfaces = { module = "com.noxcrew.interfaces:interfaces", version = "1.1.10" }
+interfaces = { module = "com.noxcrew.interfaces:interfaces", version = "1.0.1" }
 
 citizens = { module = "net.citizensnpcs:citizens-main", version = "2.0.33-SNAPSHOT" }
 hephaistos = { module = "io.github.jglrxavpok.hephaistos:common", version = "2.6.1" }
@@ -26,7 +27,14 @@ hikariCP = { module = "com.zaxxer:HikariCP", version = "5.1.0" }
 lamp-common = { module = "com.github.Revxrsal.Lamp:common", version.ref = "lamp" }
 lamp-bukkit = { module = "com.github.Revxrsal.Lamp:bukkit", version.ref = "lamp" }
 
+# SQL Framework
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-datetime = { module = "org.jetbrains.exposed:exposed-kotlin-datetime", version.ref = "exposed" }
+
+exposed-jbdc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+
 [bundles]
 koin = ["koin-core", "koin-annotations"]
+exposed-runtime = ["exposed-core", "exposed-datetime"]
 
 [plugins]

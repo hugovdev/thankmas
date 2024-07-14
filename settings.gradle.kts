@@ -4,4 +4,4 @@ plugins {
 
 rootProject.name = "thankmas"
 
-include("common", "common-paper", "build-server")
+include("common", "common-paper", "build-server", "lobby")

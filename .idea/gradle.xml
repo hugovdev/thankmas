@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/build-server" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/common-paper" />
+            <option value="$PROJECT_DIR$/lobby" />
           </set>
         </option>
       </GradleProjectSettings>

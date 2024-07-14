@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.0" apply false
+    kotlin("jvm") version "2.0.0"
     id("io.papermc.paperweight.userdev") version "1.7.1" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
     id("com.google.devtools.ksp") version "2.0.0-1.0.23" apply false
@@ -17,4 +17,9 @@ allprojects {
         maven(url = "https://maven.noxcrew.com/public/")
         maven(url = "https://maven.citizensnpcs.co/repo")
     }
+}
+
+kotlin {
+    jvmToolchain(17)
+    explicitApi()
 }
