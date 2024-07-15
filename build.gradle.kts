@@ -1,11 +1,15 @@
 plugins {
     kotlin("jvm") version "2.0.0"
-    id("io.papermc.paperweight.userdev") version "1.7.1" apply false
-    id("com.github.johnrengelman.shadow") version "8.1.1" apply false
-    id("com.google.devtools.ksp") version "2.0.0-1.0.23" apply false
+    alias(libs.plugins.shadow)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.paperweight) apply false
 }
 
 allprojects {
+    apply(plugin = "org.jetbrains.kotlin.jvm")
+    apply(plugin = "com.github.johnrengelman.shadow")
+    apply(plugin = "com.google.devtools.ksp")
+
     repositories {
         mavenCentral()
 
