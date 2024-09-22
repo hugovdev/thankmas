@@ -1,5 +1,5 @@
 [versions]
-paper = "1.21-R0.1-SNAPSHOT"
+paper = "1.21.1-R0.1-SNAPSHOT"
 lamp = "3.2.1"
 exposed = "0.52.0"
 
