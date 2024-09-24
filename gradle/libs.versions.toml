@@ -9,6 +9,7 @@ exposed = "0.54.0"
 koin-core = { module = "io.insert-koin:koin-core", version = "3.5.6" }
 koin-annotations = { module = "io.insert-koin:koin-annotations", version = "1.3.1" }
 koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "1.3.1" }
+caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version = "3.1.8" }
 
 # Miscellaneous utils and libraries!
 luck-perms = { module = "net.luckperms:api", version = "5.4" }
@@ -17,7 +18,7 @@ interfaces = { module = "com.noxcrew.interfaces:interfaces", version = "1.3.0-SN
 
 citizens = { module = "net.citizensnpcs:citizens-main", version = "2.0.35-SNAPSHOT" }
 hephaistos = { module = "io.github.jglrxavpok.hephaistos:common", version = "2.6.1" }
-aswm = { module = "com.infernalsuite.aswm:api", version = "1.20.6-R0.1-SNAPSHOT"}
+aswm = { module = "com.infernalsuite.aswm:api", version = "1.20.6-R0.1-SNAPSHOT" }
 
 hikariCP = { module = "com.zaxxer:HikariCP", version = "5.1.0" }
 
