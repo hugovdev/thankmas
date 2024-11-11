@@ -1,5 +1,5 @@
 [versions]
-paper = "1.21.1-R0.1-SNAPSHOT"
+paper = "1.21.3-R0.1-SNAPSHOT"
 lamp = "3.2.1"
 exposed = "0.54.0"
 
@@ -20,7 +20,7 @@ citizens = { module = "net.citizensnpcs:citizens-main", version = "2.0.35-SNAPSH
 hephaistos = { module = "io.github.jglrxavpok.hephaistos:common", version = "2.6.1" }
 aswm = { module = "com.infernalsuite.aswm:api", version = "1.20.6-R0.1-SNAPSHOT" }
 
-hikariCP = { module = "com.zaxxer:HikariCP", version = "5.1.0" }
+hikariCP = { module = "com.zaxxer:HikariCP", version = "6.1.0" }
 
 # Lamp command framework
 lamp-common = { module = "com.github.Revxrsal.Lamp:common", version.ref = "lamp" }
