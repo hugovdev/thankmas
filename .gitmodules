@@ -14,3 +14,7 @@
 	path = common-paper
 	url = https://github.com/hugovdev/thankmas-paper.git
 	branch = main
+[submodule "save-the-kweebecs"]
+	path = save-the-kweebecs
+	url = https://github.com/hugovdev/save-the-kweebecs.git
+	branch = main

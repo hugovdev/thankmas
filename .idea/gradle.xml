@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/common-paper" />
             <option value="$PROJECT_DIR$/lobby" />
+            <option value="$PROJECT_DIR$/save-the-kweebecs" />
           </set>
         </option>
       </GradleProjectSettings>
