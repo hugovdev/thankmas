@@ -16,5 +16,4 @@
 	branch = main
 [submodule "save-the-kweebecs"]
 	path = save-the-kweebecs
-	url = https://github.com/hugovdev/save-the-kweebecs.git
-	branch = main
+	url = https://github.com/hugovdev/save-the-kweebecs
