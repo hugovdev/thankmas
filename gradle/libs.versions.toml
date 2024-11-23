@@ -7,8 +7,8 @@ exposed = "0.54.0"
 
 # Dependency injection!
 koin-core = { module = "io.insert-koin:koin-core", version = "3.5.6" }
-koin-annotations = { module = "io.insert-koin:koin-annotations", version = "1.3.1" }
-koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "1.3.1" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version = "1.4.0" }
+koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "1.4.0" }
 caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version = "3.1.8" }
 
 # Miscellaneous utils and libraries!
@@ -40,4 +40,4 @@ exposed-runtime = ["exposed-core", "exposed-datetime"]
 [plugins]
 paperweight = { id = "io.papermc.paperweight.userdev", version = "1.7.2" }
 shadow = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
-ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.23" }
+ksp = { id = "com.google.devtools.ksp", version = "2.0.21-1.0.28" }
