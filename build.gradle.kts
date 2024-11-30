@@ -20,6 +20,7 @@ allprojects {
         maven(url = "https://repo.rapture.pw/repository/maven-releases/")
         maven(url = "https://maven.noxcrew.com/public/")
         maven(url = "https://maven.citizensnpcs.co/repo")
+        maven(url = "https://repo.minehub.live/releases")
     }
 
     plugins.withId("org.jetbrains.kotlin.jvm") {
