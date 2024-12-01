@@ -21,7 +21,7 @@ hephaistos = { module = "io.github.jglrxavpok.hephaistos:common", version = "2.6
 aswm = { module = "com.infernalsuite.aswm:api", version = "3.0.0-SNAPSHOT" }
 aswm-loaders = { module = "com.infernalsuite.aswm:loaders", version = "3.0.0-SNAPSHOT" }
 
-polar-paper = { module = "live.minehub:polarpaper", version = "main" }
+polar-paper = { module = "live.minehub:polarpaper", version = "1.1.3" }
 
 hikariCP = { module = "com.zaxxer:HikariCP", version = "6.1.0" }
 
