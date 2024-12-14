@@ -1,0 +1,5 @@
+name: ThankmasLobby
+main: me.hugo.creativelimiter.CreativeLimiter
+version: 1.0
+api-version: 1.21
+depend: [ LuckPerms ]

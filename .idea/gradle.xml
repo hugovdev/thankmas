@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/build-server" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/common-paper" />
+            <option value="$PROJECT_DIR$/creative-limiter" />
             <option value="$PROJECT_DIR$/lobby" />
             <option value="$PROJECT_DIR$/save-the-kweebecs" />
           </set>
