@@ -8,7 +8,7 @@ exposed = "0.50.0"
 # Dependency injection!
 koin-core = { module = "io.insert-koin:koin-core", version = "4.0.4" }
 koin-annotations = { module = "io.insert-koin:koin-annotations", version = "2.0.0" }
-koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "1.4.0" }
+koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version = "2.0.0" }
 caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version = "3.2.0" }
 
 # Miscellaneous utils and libraries!
