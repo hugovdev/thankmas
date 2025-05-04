@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
+    kotlin("jvm") version "2.1.20"
     alias(libs.plugins.shadow)
     alias(libs.plugins.ksp)
     alias(libs.plugins.paperweight) apply false
@@ -11,6 +11,7 @@ allprojects {
     apply(plugin = "com.google.devtools.ksp")
 
     repositories {
+        gradlePluginPortal()
         mavenCentral()
 
         maven(url = "https://jitpack.io")
