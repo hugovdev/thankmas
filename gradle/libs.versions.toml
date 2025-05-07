@@ -2,6 +2,7 @@
 paper = "1.21.5-R0.1-SNAPSHOT"
 lamp = "3.3.6"
 exposed = "0.50.0"
+kotlinx-serialization = "1.8.1"
 
 [libraries]
 
@@ -24,6 +25,7 @@ aswm-loaders = { module = "com.infernalsuite.aswm:loaders", version = "3.0.0-SNA
 polar-paper = { module = "live.minehub:polarpaper", version = "1.21.4.6" }
 
 hikariCP = { module = "com.zaxxer:HikariCP", version = "6.3.0" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 
 # Lamp command framework
 lamp-common = { module = "com.github.Revxrsal.Lamp:common", version.ref = "lamp" }

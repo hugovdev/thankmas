@@ -1,5 +1,7 @@
 plugins {
     kotlin("jvm") version "2.1.20"
+    kotlin("plugin.serialization") version "2.1.20"
+
     alias(libs.plugins.shadow)
     alias(libs.plugins.ksp)
     alias(libs.plugins.paperweight) apply false
@@ -7,6 +9,8 @@ plugins {
 
 allprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
+    apply(plugin = "org.jetbrains.kotlin.plugin.serialization")
+
     apply(plugin = "com.github.johnrengelman.shadow")
     apply(plugin = "com.google.devtools.ksp")
 
