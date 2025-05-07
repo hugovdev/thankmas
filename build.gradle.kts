@@ -37,7 +37,7 @@ allprojects {
         tasks.compileKotlin {
             compilerOptions {
                 javaParameters = true
-                freeCompilerArgs.add("-Xcontext-receivers")
+                freeCompilerArgs.add("-Xcontext-parameters")
             }
         }
     }

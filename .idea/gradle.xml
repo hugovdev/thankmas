@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/save-the-kweebecs" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
