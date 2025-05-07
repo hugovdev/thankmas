@@ -12,34 +12,24 @@ import me.hugo.thankmas.listener.PlayerSpawnpointOnJoin
 import me.hugo.thankmas.listener.RankedPlayerChat
 import me.hugo.thankmas.player.PlayerDataManager
 import me.hugo.thankmas.player.rank.PlayerGroupChange
-import me.hugo.thankmas.world.registry.AnvilWorldRegistry
 import org.bukkit.Bukkit
 import org.koin.core.component.inject
-import org.koin.core.context.loadKoinModules
 import org.koin.core.parameter.parametersOf
 import org.koin.ksp.generated.module
 import revxrsal.commands.bukkit.BukkitCommandHandler
 
-public class CreativeLimiter : ThankmasPlugin<CreativePlayer>(listOf("creative")) {
+public class CreativeLimiter :
+    ThankmasPlugin<CreativePlayer>(listOf("creative"), { listOf(CreativeModules().module) }) {
 
     override val playerDataManager: PlayerDataManager<CreativePlayer> = PlayerDataManager { CreativePlayer(it, this) }
     override val scoreboardTemplateManager: CreativeScoreboardManager by inject { parametersOf(this) }
 
-    private val anvilWorldRegistry: AnvilWorldRegistry by inject()
+    private val spawnpointOnJoin: PlayerSpawnpointOnJoin by inject { parametersOf(this, "spawnpoint") }
 
-    private val spawnpointOnJoin: PlayerSpawnpointOnJoin by inject { parametersOf(creativeWorldName, "spawnpoint") }
-    private var creativeWorldName: String = "world"
+    override val worldNameOrNull: String = "world"
+    override val downloadWorld: Boolean = false
 
     private lateinit var commandHandler: BukkitCommandHandler
-
-
-    override fun onLoad() {
-        super.onLoad()
-
-        loadKoinModules(CreativeModules().module)
-
-        anvilWorldRegistry.loadMarkers(this.creativeWorldName)
-    }
 
     override fun onEnable() {
         super.onEnable()

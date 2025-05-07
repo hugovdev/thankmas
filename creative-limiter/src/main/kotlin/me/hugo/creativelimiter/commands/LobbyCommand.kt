@@ -11,7 +11,7 @@ public class LobbyCommand {
     @Command("lobby", "hub", "leave", "back")
     @Description("Leave creative!")
     private fun sendToLobby(sender: Player) {
-        ThankmasPlugin.instance().playerDataManager.getPlayerData(sender.uniqueId).saveSafely(sender) {
+        ThankmasPlugin.instance<ThankmasPlugin<*>>().playerDataManager.getPlayerData(sender.uniqueId).saveSafely(sender) {
             sender.kick(Component.text("Sending back to hub..."))
         }
     }
